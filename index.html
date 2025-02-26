@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mimi</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Trebuchet MS', sans-serif; /* Cambiamos el tipo de letra */
+            background-image: url('https://i.pinimg.com/736x/63/80/9c/63809c777ff49017f065855b079b2bfe.jpg'); /* Imagen de fondo */
+            background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+        }
+        header {
+            width: 100%;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 20px 0; /* Más espacio arriba y abajo */
+            margin-bottom: 40px; /* Más espacio debajo del encabezado */
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 40px auto; /* Más espacio arriba y abajo */
+        }
+        .left-section, .middle-section, .right-section {
+            padding: 20px; /* Más espacio alrededor */
+            font-size: 16px; /* Tamaño de letra diferente */
+            text-align: justify;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para mejor legibilidad */
+            border-radius: 10px; /* Bordes redondeados */
+            margin: 20px; /* Más espacio alrededor de cada sección */
+        }
+        .left-section {
+            flex: 1;
+            font-size: 14px; /* Tamaño de letra menor al del título */
+        }
+        .middle-section img {
+            width: 100%; /* Ajusta el tamaño de la imagen */
+            max-width: 900px; /* Tamaño máximo de la imagen aumentado aún más */
+            height: auto;
+            margin: 20px auto; /* Más espacio arriba y abajo de la imagen */
+        }
+        .middle-section ul {
+            list-style-type: none; /* Eliminamos viñetas de la lista */
+            padding: 0;
+        }
+        .middle-section li {
+            margin: 10px 0;
+        }
+        .middle-section a {
+            text-decoration: none;
+            color: blue; /* Color de los enlaces */
+        }
+        .middle-section a:hover {
+            text-decoration: underline; /* Subrayado al pasar el ratón por encima */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        tr td:nth-child(1) {
+            background-color: yellow;
+        }
+        tr td:nth-child(2) {
+            background-color: orange;
+        }
+        .marquee-container {
+            margin-top: 20px;
+        }
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            animation: marquee 5s linear infinite;
+            margin-top: 20px; /* Más espacio arriba */
+        }
+        .marquee p, .marquee img {
+            display: inline-block;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .marquee img {
+            width: 50px; /* Tamaño de la imagen ajustado */
+            height: auto;
+            margin-left: 10px; /* Separación entre texto e imagen */
+        }
+        .audio-container {
+            margin-top: 20px;
+        }
+        .footer {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+            border-radius: 10px; /* Bordes redondeados */
+            margin-top: 40px; /* Más espacio arriba */
+        }
+        .footer div {
+            flex: 1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: red;">Autos Asiáticos</h1>
+    </header>
+    <div class="content">
+        <div class="left-section">
+            <p>Ideal para incorporaciones a avenidas, rebases y aceleraciones que impliquen la máxima potencia en toda la curva de RPM ́s. SPORTCHIPS PRO cuenta con tecnología. El tuning, que mejora las prestaciones de este tipo de autos deportivos, es otro aspecto de la cultura japonesa expandida a nivel mundial.</p>
+            <table>
+                <tr>
+                    <th>Auto</th>
+                    <th>Velocidad Máxima (km/h)</th>
+                </tr>
+                <tr>
+                    <td>Nissan Skyline GT-R</td>
+                    <td>315</td>
+                </tr>
+                <tr>
+                    <td>Toyota Supra</td>
+                    <td>290</td>
+                </tr>
+                <tr>
+                    <td>Honda NSX</td>
+                    <td>307</td>
+                </tr>
+                <tr>
+                    <td>Mazda RX-7</td>
+                    <td>250</td>
+                </tr>
+            </table>
+            <div class="marquee-container">
+                <div class="marquee">
+                    <p>fiuuuuuum.</p>
+                    <img src="https://di-enrollment-api.s3.amazonaws.com/toyota/models/2023/GR+Supra/Trims/2.0+Trim.png" alt="Imagen en movimiento">
+                </div>
+            </div>
+        </div>
+        <div class="middle-section">
+            <p>El mundo del tuning no solo se trata de mejorar las prestaciones de los autos, sino también de personalizar y hacer únicos a estos vehículos. Los autos deportivos asiáticos han sido pioneros en esta cultura, llevando las modificaciones a niveles extremos y creativos. Desde los alerones gigantes hasta los sistemas de escape personalizados, cada detalle cuenta para los entusiastas del tuning.</p>
+            <img src="https://12vpersonalcar.com/upload/images/11_2020/1391_03-tuning_w0_650pix.jpg" alt="Imagen de Autos Asiáticos">
+            <ul>
+                <li><a href="https://www.nissan.com/GT-R" target="_blank">Nissan Skyline GT-R</a></li>
+                <li><a href="https://www.toyota.com/Supra" target="_blank">Toyota Supra</a></li>
+                <li><a href="https://www.honda.com/NSX" target="_blank">Honda NSX</a></li>
+                <li><a href="https://www.mazda.com/RX-7" target="_blank">Mazda RX-7</a></li>
+            </ul>
+        </div>
+        <div class="right-section">
+            <p>Además de las modificaciones estéticas, el tuning también se enfoca en mejorar la eficiencia y el rendimiento del motor. Los autos asiáticos, como el Nissan Skyline GT-R y el Toyota Supra, son conocidos por su capacidad de ser tuneados para alcanzar velocidades impresionantes y ofrecer una experiencia de manejo única. La comunidad del tuning valora tanto el rendimiento como la apariencia, creando una combinación perfecta de potencia y estilo.</p>
+            <ul>
+                <li>Nissan Skyline GT-R</li>
+                <li>Toyota Supra</li>
+                <li>El Honda NSX</li>
+                <li>Mazda RX-7</li>
+                <li>Mitsubishi 3000GT</li>
+                <li>Subaru Impreza WRX STI</li>
+                <li>Nissan 300ZX</li>
+            </ul>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="URL_DE_LA_CANCION" type="audio/mpeg">
+                 
+                </audio>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>Correo</div>
+        <div>Celular</div>
+        <div>Dirección</div>
+    </div>
+</body>
+</html>
