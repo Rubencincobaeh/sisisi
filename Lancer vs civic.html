@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lancer vs Honda Civic</title>
+    <style>
+        .titulo {
+            background-color: #ADD8E6; /* Azul claro */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .marquee {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: marquee 10s linear infinite; /* Movimiento más lento */
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .marquee span {
+            display: inline-block;
+            padding-right: 100%; /* Espacio adicional para llenar la línea */
+        }
+        .contenido {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .texto {
+            width: 30%;
+            font-family: Arial, sans-serif;
+        }
+        .imagen {
+            width: 30%;
+            text-align: center;
+        }
+        .viñetas {
+            width: 30%;
+        }
+        .viñetas ul {
+            list-style-type: disc;
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        Lancer vs Honda Civic
+    </div>
+    <div class="marquee">
+        <span>califiqueme califiqueme califiqueme califiqueme califiqueme califiqueme califiqueme califiqueme</span>
+    </div>
+    <div class="contenido">
+        <div class="texto">
+            <p>Texto de ejemplo en Arial</p>
+        </div>
+        <div class="imagen">
+            <img src="URL_DE_TU_IMAGEN_AQUÍ" alt="Descripción de la imagen" width="100%">
+        </div>
+        <div class="viñetas">
+            <ul>
+                <li>Viñeta 1</li>
+                <li>Viñeta 2</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
